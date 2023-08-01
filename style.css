@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+*{
+ font-family: 'Barlow', sans-serif;
+}
+img{
+ border-radius: 25px;
+}
+body{
+ padding: 0 165px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0 auto;
+}
+
+ header{
+  width: 100%;
+ }
+
+.header-container{
+padding-top: 55px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+ width: 40px;
+ height: 40px;
+ border-radius: 0;
+}
+.order-btn{
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 26px;
+ letter-spacing: 0px;
+ color: rgba(22, 37, 66, 1);
+ padding: 16px 27px;
+ text-transform: uppercase;
+ background-color: rgba(232, 239, 242, 1);
+ border: none;
+ border-radius: 12px;
+ white-space: nowrap;
+}
+.order-btn:hover{
+  background-color: rgba(22, 37, 66, 1);
+  color: white;
+}
+/* /////typemaster///// */
+
+.typemaster-section{
+width: 100%;
+margin:83px 0 30px  ;
+display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+}
+
+.typemaster-left{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+
+}
+.typemaster-title{
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: rgba(22, 37, 66, 1);
+}
+.typemaster-text{
+ margin: 24px 0 40px;
+ width: 445px;
+ font-size: 18px;
+ font-weight: 500;
+ line-height: 26px;
+ letter-spacing: 0px;
+color:rgba(123, 139, 173, 1) ;
+}
+
+.typemaster-btns{
+ display: flex;
+ gap: 13px;
+}
+.orange{
+ background-color: rgba(241, 103, 24, 1);
+ color: rgba(255, 255, 255, 1);
+}
+.orange:hover{
+  background-color: rgba(255, 155, 98, 1);
+}
+.pale{
+ background-color: transparent;
+ color:rgba(123, 139, 173, 1);
+}
+.pale:hover{
+  background-color: transparent;
+    color: rgba(123, 139, 173, 1);
+}
+
+.typemaster-right{
+ margin-left:125px;
+ max-width: 540px;
+}
+
+.typemaster-shape{
+ position: absolute;
+ width: 135px;
+ height: 240px;
+ top: 196px;
+ right:0 ;
+ background-color: rgba(232, 239, 242, 1);
+ border-top-left-radius: 38px;
+ border-bottom-left-radius: 38px;
+}
+.typemaster-tablet-keyboard{
+  display: none;
+}
+.typemaster-mobile-keyboard{
+  display: none;
+}
+/* \\\\\\\mechanical section.\\\\\\\\ */
+.keyboard-images-tablet{
+  display: none;
+}
+.keyboard-images-mobile{
+  display: none;
+}
+.mechanical-shape{
+ position: absolute;
+  width: 135px;
+  height: 240px;
+  bottom: 0px;
+  left: -165px;
+  background-color: rgba(232, 239, 242, 1);
+  border-top-right-radius: 38px;
+  border-bottom-right-radius: 38px;
+  z-index: 1;
+ }
+
+.mechanical-section{
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+.keyboard-img1{
+ width: 255px;
+ position: relative;
+}
+
+.keyboard-img1:after {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ border-radius: 25px;
+ width: 100%;
+ height: 100%;
+ background-color:#E94B00;
+ opacity: 75%;
+}
+.keyboard-img2{
+ width:445px;
+ margin: 0 125px 0 30px; 
+}
+.mechanical-content{
+ width:255px ;
+}
+.mechanical-title{
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: rgba(22, 37, 66, 1);
+}
+.mechanical-text{
+ margin-top: 27px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color:rgba(123, 139, 173, 1) ;
+}
+/* //////pros/////// */
+.section-pros{
+/* width: 100%; */
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 30px;
+margin:168px 0 128px ;
+}
+.pro{
+ display: flex;
+ flex-direction: column;
+align-items: flex-start;
+}
+.icon{
+width: 65px;
+height: 65px;
+background-color: rgba(241, 103, 24, 1);
+padding:20px ;
+border-radius: 25px;
+}
+.icon img{
+ border-radius:0 ;
+}
+.pro-title{
+ font-size: 24px;
+ font-weight: 900;
+ line-height: 28px;
+ letter-spacing: 0px;
+color: rgba(22, 37, 66, 1);
+margin: 48px 0 24px;
+}
+.pro-text{
+color: rgba(123, 139, 173, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+@media(max-width:1260px){
+
+  body {
+      padding:0 0 0 40px  ;
+    }
+  
+    .header-container {
+      padding: 40px 40px 0 0 ;
+    }
+    /* /////typemaster///// */
+  
+    .typemaster-section {
+      width: 100%;
+      margin: 62px 0 40px;
+      display: flex;
+      /* justify-content: flex-start; */
+      position: relative;
+    }
+  
+    .typemaster-left {
+      align-items: flex-start;
+      width: 339px;
+    }
+  
+    .typemaster-title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  
+    .typemaster-text {
+      margin: 34px 0 40px;
+      font-size: 16px;
+      width: 339px;
+    }
+    .typemaster-right {
+      display: none;
+    }
+  
+    .typemaster-shape {
+      display: none;
+    }
+    .typemaster-tablet-keyboard {
+      display:inline-block;
+      background-image: url(./assets/tablet/image-keyboard.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 69px;
+      width: 425px;
+      height: 478px;
+       border-radius: 38px;
+    }
+    
+    /* \\\\\\\mechanical section.\\\\\\\\ */
+  
+    .mechanical-shape {
+     display: none;
+    }
+  
+    .mechanical-section {
+      position: relative;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  .keyboard-images-tablet{
+    display: grid;
+    grid-template-columns: 214px 445px;
+    gap: 30px;
+  }
+    .keyboard-img1 {
+      display: none;
+     
+    }
+    .tablet-keyboard1{
+      position: relative;
+    }
+    .tablet-keyboard1::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+      background-color: #E94B00;
+      opacity: 75%;
+    }
+  
+    .keyboard-img2 {
+    display: none;
+    }
+  
+    .mechanical-content {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 72px;
+      align-items: center;
+      gap: 36px;
+      }
+  
+    .mechanical-text {
+      margin-top: 0;
+    }
+  
+    /* //////pros/////// */
+    .section-pros {
+      /* width: 100%; */
+      padding-right: 40px;
+      display: grid;
+      grid-template-columns: repeat(2,281px );
+      grid-template-rows: repeat(2, 1fr);
+      column-gap:69px ;
+      row-gap: 72px;
+      margin: 142px 0 ;
+    }
+  
+    .pro {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .icon {
+      width: 65px;
+      height: 65px;
+      background-color: rgba(241, 103, 24, 1);
+      padding: 20px;
+      border-radius: 25px;
+    }
+  
+    .icon img {
+      border-radius: 0;
+    }
+  
+    .pro-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: rgba(22, 37, 66, 1);
+      margin: 48px 0 24px;
+    }
+  
+    .pro-text {
+      max-width: 281px;
+    }
+    
+}
+@media(max-width:912px) {
+
+.mechanical-content {
+   flex-direction: row;
+   text-align: left;
+  }
+
+}
+@media(max-width:768px){
+
+  .typemaster-tablet-keyboard {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+    }
+}
+@media(max-width:730px){
+  body{
+    padding: 0;
+  }
+    .header-container {
+      padding: 23px 24px 0;
+    }
+  .order-btn{
+    padding:11px 14px ;
+  }
+    /* /////typemaster///// */
+  
+    .typemaster-section {
+      /* width: 100%; */
+      margin: 64px 0 24px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+  
+    .typemaster-left {
+      width: 327px;
+      margin: 0 24px;
+    }
+  .typemaster-btns{
+    gap: 0;
+  }
+    .typemaster-text {
+      margin: 32px 0;
+      width: 327px;
+    }
+  
+    .typemaster-tablet-keyboard{
+      display: none;
+    }
+    .typemaster-mobile-keyboard{
+      margin-top: 64px;
+      display: inline-block;
+        background-image: url(./assets/mobile/image-keyboard.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 24px;
+        width: 372px;
+        height: 331px;
+        border-radius: 38px;
+        /* overflow: hidden; */
+      }
+    
+    /* \\\\\\\mechanical section.\\\\\\\\ */
+    .mechanical-section {
+      padding: 0;
+      margin-right: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .keyboard-images-tablet {
+      display:none;
+    }
+    .keyboard-images-mobile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+    .mobile-keyboard1{
+  display: inline-block;
+  background-image: url(./assets/mobile/image-phone-and-keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 129px;
+  height: 193px;
+  border-radius: 38px;
+  position: relative;
+    }
+    .mobile-keyboard1::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+      background-color: #E94B00;
+      opacity: 75%;
+    }
+    .mobile-keyboard2{
+height: 193px;
+width: 220px;
+    }
+
+  
+    .mechanical-content {
+      margin: 75px 24px 0;
+      gap: 24px;
+      flex-direction: column;
+      text-align: center;
+      
+    }
+  .mechanical-title{
+    max-width: 255px;
+  }
+    .mechanical-text {
+      max-width: 327px;
+    }
+  
+    /* //////pros/////// */
+    .section-pros {
+      padding:0;
+      margin:111px  24px 96px ;
+      display: grid;
+      grid-template-columns: 327px;
+      row-gap: 64px;
+      margin: 142px 0;
+    }
+  
+    .pro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .icon {
+      width: 65px;
+      height: 65px;
+      background-color: rgba(241, 103, 24, 1);
+      padding: 20px;
+      border-radius: 25px;
+    }
+  
+    .icon img {
+      border-radius: 0;
+    }
+  
+    .pro-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: rgba(22, 37, 66, 1);
+      margin: 48px 0 24px;
+    }
+  
+    .pro-text {
+      max-width: 281px;
+    }
+
+}
